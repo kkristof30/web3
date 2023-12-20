@@ -2,9 +2,9 @@ footer{
     background-color: blueviolet;
     color: lightblue;
     text-align: center;
-    float: right;
 }
 div{
     color: aqua;
     background-color: aqua;
+    text-align: center;
 }
