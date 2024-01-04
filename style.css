@@ -28,10 +28,18 @@ footer{
 }
 </style>
 
-.box1
-.box2
+.box1{
+  margin: 1px;
+  width: 100px;
+  height: 100px;
+}
+.box2{
+  margin: 1px;
+  width: 100px;
+  height: 100px;
+}
 .box3{
-  margin: 10px;
+  margin: 1px;
   width: 100px;
   height: 100px;
 }
