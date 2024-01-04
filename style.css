@@ -27,3 +27,11 @@ footer{
   color: white;
 }
 </style>
+
+.box1
+.box2
+.box3{
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
