@@ -37,9 +37,11 @@ footer{
 }
 .box1{
   background-color: aqua;
+  float: left;
 }
 .box2{
   background-color: red;
+  float: left;
 }
 .box3{
   background-color: green;
