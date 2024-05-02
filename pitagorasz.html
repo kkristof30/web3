@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagorasz-tétel kiszámítása</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<img src="data:image/png;base64,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" alt="">
+<p>A tétel. Bármely derékszögű háromszög leghosszabb oldalának (átfogójának) négyzete megegyezik a másik két oldal (a befogók) négyzetösszegével. Tehát: ha egy háromszög derékszögű, akkor a leghosszabb oldalára emelt négyzet területe a másik két oldalra emelt négyzetek területének összegével egyenlő.</p>
+<div class="container">
+    <h1 class="mt-5">Pitagorasz-tétel kiszámítása</h1>
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <form id="calculatorForm">
+                <div class="mb-3">
+                    <label for="inputA" class="form-label">A oldal hossza</label>
+                    <input type="text" class="form-control" id="inputA" name="a" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputB" class="form-label">B oldal hossza</label>
+                    <input type="text" class="form-control" id="inputB" name="b" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputC" class="form-label">C oldal hossza (átfogó)</label>
+                    <input type="text" class="form-control" id="inputC" name="c" readonly>
+                </div>
+                <button type="submit" class="btn btn-primary">Számolás</button>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <div id="result" class="mt-3"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+
+    document.getElementById("calculatorForm").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+
+        let a = parseFloat(document.getElementById("inputA").value);
+        let b = parseFloat(document.getElementById("inputB").value);
+
+       
+        if (isNaN(a) || isNaN(b)) {
+            alert("Kérlek, írj számokat az A és B mezőbe!");
+            return;
+        }
+
+        
+        let c = Math.sqrt(a * a + b * b);
+
+        
+        document.getElementById("inputC").value = c.toFixed(2);
+    });
+
+   
+    document.getElementById("inputA").addEventListener("input", function(event) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+
+    document.getElementById("inputB").addEventListener("input", function(event) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    });
+</script>
+</body>
+</html>
